@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
+
 <script>
-    let number = +prompt('Tính giai thừa')
-    let tinhGiaiThua = 1
-
-        for (let i = 1; i <= number; i++) {
-            tinhGiaiThua= tinhGiaiThua * i
 
 
+  alert(isNumber('2'));
 
-    }alert('Giai thừa của' + ''+ number+' ' + 'là' +' '+ tinhGiaiThua)
+  function isNumber(char) {
+    return parseInt(char).toString() == 'NaN' ? false : true;
+  }
 
 </script>
 
