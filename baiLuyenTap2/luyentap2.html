@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhDienTichVaChuVi(radius) {
+        let a =[]
+        let c = 3.14*2*radius;
+        let s = radius*radius*3.14;
+        a.push('chu vi'+c,'dien tich'+s);
+        return a;
+    }
+    console.log(tinhDienTichVaChuVi(5))
+    document.write('Diện tích là :' + tinhDienTichVaChuVi(5)[0] +'<br>'+ 'Chu vi là '+ tinhDienTichVaChuVi(5)[1])
+
+</script>
+
+</body>
+</html>

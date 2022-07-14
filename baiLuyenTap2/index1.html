@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+script>
+function dienTichChuVi(r) {
+let dienTich=r*r*Math.PI
+let chuVi=2*r*Math.PI
+let chuViDienTich=[];
+
+chuViDienTich.push(dienTich,chuVi);
+return chuViDienTich;
+
+}
+r1=+prompt('Nhập bán kính 1');
+r2=+prompt('Nhap ban kinh 2');
+dienTichChuVi()
+// // let dienTich=dienTichChuVi(r)
+// document.write('Chu Vi 1 la:'+ '' + dienTichChuVi(r1)[0] +'<br>'+ 'Dien tich 1 la:'+' ' + dienTichChuVi(r1)[1] + '<br>')
+// document.write('Chu Vi 2 la:'+'' + dienTichChuVi(r2)[0] +'<br>'+ 'Dien tich 2 la:' +'' + dienTichChuVi(r2)[1] +'<br>')
+function tiLe2Hinh() {
+let tiLeChuVi = dienTichChuVi(r1)[0] / dienTichChuVi(r2)[0];
+let tileDientich = dienTichChuVi(r1)[1] / dienTichChuVi(r2)[1];
+document.write('ti le chu vi'+' ' + tiLeChuVi + '<br>' + 'ti le dien tich' +'' + tileDientich)
+}
+tiLe2Hinh()
+Minh Đức
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    radious1 = +prompt("nhap ban kinh 1");
+    radious2 = +prompt("nhap ban kinh 2 ");
+    function dienTichvaChuVi(radious) {
+        let dienTich = radious * radious * Math.PI;
+        let chuVi = 2 * radious * Math.PI;
+        let khoChua = [];
+        khoChua.push(dienTich,chuVi);
+        return khoChua;
+    }
+    alert("Diện tích hình 1 = " +dienTichvaChuVi(radious1)[0]+"\n Diện tích hình 2 =" + dienTichvaChuVi(radious2)[0]+"\n Chu vi hình 1 = "+dienTichvaChuVi(radious1)[1]+"\n Chu vi hình 2 = "+ dienTichvaChuVi(radious2)[1]);
+    dienTichvaChuVi();
+    function tiLe(radious1,radious2) {
+        let tiLeDientich = dienTichvaChuVi(radious1)[0]/dienTichvaChuVi(radious2)[0];
+        let tiLeChuVi = dienTichvaChuVi(radious1)[1]/dienTichvaChuVi(radious2)[1];
+        alert("Tỉ lệ diện tích = " + tiLeDientich + "\n Tỉ lệ chu vi"+ tiLeChuVi);
+
+    }
+    tiLe(radious1,radious2);
+</script>
+</body>
+</html>
+
+</body>
+</html>
