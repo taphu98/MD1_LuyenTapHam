@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+
+    let cons = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Minor', 'Leo'];
+
+    document.write(search(prompt('Nhập ngôi sao cần tim')));
+
+    function search(string) {
+        for (let i = 0; i < star.length; i++) {
+            if(star[i].toLowerCase() == string.toLowerCase()) {
+                return 'Chòm sao: ' + cons[i];
+            }
+        }
+        return 'Không tìm thấy ngôi sao';
+    }
+
+</script>
+
+</body>
+</html>
